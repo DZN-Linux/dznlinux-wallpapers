@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Dozzen Linux Wallpapers
+X-KDE-PluginInfo-Name=Dozzen
+X-KDE-PluginInfo-Author=Seth Dawson
+X-KDE-PluginInfo-License=GPL
+
+[Wallpaper]
+defaultWallpaperTheme=Dozzen
+defaultFileSuffix=.jpg
+defaultWidth=2560
+defaultHeight=1440
