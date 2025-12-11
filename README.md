@@ -24,7 +24,30 @@ A curated collection of 115 high-quality wallpapers optimized for use with Arch 
 
 ### From DZN Linux Repository (Recommended)
 
+First, add the DZN Linux repository to your system:
+
 ```bash
+# Add the PGP key
+sudo pacman-key --recv-key BB31837564255477
+sudo pacman-key --lsign-key BB31837564255477
+```
+
+Add the following to `/etc/pacman.conf`:
+
+```ini
+[dznlinux_repo]
+SigLevel = Required DatabaseOptional
+Server = https://repo.dozzen.me/archlinux/$repo/$arch
+
+[dznlinux_repo_3party]
+SigLevel = Required DatabaseOptional
+Server = https://repo.dozzen.me/archlinux/$repo/$arch
+```
+
+Then install the package:
+
+```bash
+sudo pacman -Sy
 sudo pacman -S dznlinux-wallpapers-git
 ```
 
